@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
       {path: 'home', component: HomeComponent},
 
       {path: 'tecnicos', component: TecnicoListComponent},
-      {path: 'tecnicos/create', component: TecnicoCreateComponent}
+      {path: 'tecnicos/create', component: TecnicoCreateComponent},
+      {path: 'tecnicos/update/:id', component: TecnicoUpdateComponent}
     ]
   }
 ];
